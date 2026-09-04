@@ -1,56 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo ao TECNOTICIAS</title>
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css"> 
 </head>
+
 <body>
+
     <header>
         <a href="index.html">
-            <img src="logo.png" alt="Logotipo TecNoticias" width="150px">
+            <img src="./img/logo.png" alt="Logotipo TecNoticias" width="150px">
         </a>
     </header>
 
-    <h1> NOTÍCIAS </h1>
+    <main class="container">
 
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-     
-        <div class="carousel-item active">
-            <a href="noticia1.html">
-                <img src="logo.png" class="d-block w-100" alt="IA">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Gemini demonstra ciúmes após usuário recorrer à Alexa</h5>
-                    </div>
-            </a>
+        <h1 class="my-4 text-center">NOTÍCIAS</h1>
+
+        <!-- Carrossel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="noticia1.html">
+                        <img src="img/ia1.jfif" class="d-block w-100" alt="IA" style="height: 400px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Gemini demonstra ciúmes após usuário recorrer à Alexa</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="noticia2.html">
+                        <img src="img/abelha1.jfif" class="d-block w-100" alt="Abelha" style="height: 400px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Seita de abelhas: "Seita do Ferrão" é vista atormentando a população</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="noticia3.html">
+                        <img src="./img/gato1.jpg" class="d-block w-100" alt="Krav maga" style="height: 400px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Krav Maga de felinos: primeiro dojo é inaugurado no Brasil</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
 
+        <!-- Feed -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="feed">
 
-        <div class="carousel-item">
-            <a href="noticia2.html">
-                <img src="logo.png" class="d-block w-100" alt="Abelha">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Seita de abelhas: "Seita do Ferrão" é vista atormentando a população</h5>
-                    </div>
-            </a>
-        </div>
-
-        <div class="carousel-item">
-            <a href="noticia3.html">
-                <img src="logo.png" class="d-block w-100" alt="Krav maga">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Krav Maga de felinos: primeiro dojo é inaugurado no Brasil</h5>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/ia1.jfif" class="card-img-top" alt="Gemini" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Gemini demonstra ciúmes após usuário recorrer à Alexa</h5>
+                        <p class="card-text">Troca de assistente gera reação inesperada e dramática nos servidores da IA.</p>
+                        <a href="noticia1.html" class="btn btn-primary">Ler notícia</a>
                     </div>
                 </div>
-            </a>
-    </div>
-</div>
+            </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/abelha1.jfif" class="card-img-top" alt="Abelhas" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Seita de abelhas: "Seita do Ferrão" assusta moradores</h5>
+                        <p class="card-text">Comportamento estranho em enxames levanta suspeitas na população.</p>
+                        <a href="noticia2.html" class="btn btn-primary">Ler notícia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/gato1.jpg" class="card-img-top" alt="Gatos Krav Maga" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Krav Maga de felinos: primeiro dojo é inaugurado</h5>
+                        <p class="card-text">Nada de Jiu-Jitsu! Os gatos agora estão treinando defesa pessoal israelense.</p>
+                        <a href="noticia3.html" class="btn btn-primary">Ler notícia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/pombo1.jfif" class="card-img-top" alt="Pombos" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Pombos de São Paulo são acusados de organizar uma rede secreta de vigilância</h5>
+                        <p class="card-text">Comportamento inusitado das aves deixam a população em alerta</p>
+                        <a href="noticia4.html" class="btn btn-primary">Ler notícia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/estrondo1.jpg" class="card-img-top" alt="Eren" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Eren Yeager é apontado como responsável por misteriosos tremores durante o Estrondo</h5>
+                        <p class="card-text">Tremores pelo mundo e aparição em jornal deixam a população alerta.</p>
+                        <a href="noticia5.html" class="btn btn-primary">Ler notícia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/cadeira1.jfif" class="card-img-top" alt="Cadeira" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Homem é detido após tentar fugir de multa dirigindo uma cadeira de escritório</h5>
+                        <p class="card-text">Homem com comportamento inusitado é detido em São Paulo.</p>
+                        <a href="noticia6.html" class="btn btn-primary">Ler notícia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/aaron1.jfif" class="card-img-top" alt="Aaron" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Aaron Warner interrompe operação militar após Juliette desaparecer durante jantar oficial</h5>
+                        <p class="card-text">O comandante do Setor 45 abandonou o jantar militar após notar o sumiço repentino de Juliette. 
+                                            "Ela teria me avisado", declarou antes de suspender tudo.</p>
+                        <a href="noticia7.html" class="btn btn-primary">Ler notícia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/jacks_index.jpg" class="card-img-top" alt="Jacks" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Jacks da Grota parte para cima de Castor Valor após vê-lo perto de Evangeline</h5>
+                        <p class="card-text">Arcano tenta disfarçar ciúmes enquanto Evangeline e Castor conversam.</p>
+                        <a href="noticia8.html" class="btn btn-primary">Ler notícia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/caraval2.jpg" class="card-img-top" alt="Caraval" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Legend anuncia novo Caraval após anos de silêncio</h5>
+                        <p class="card-text">Após 3 anos, Legend anuncia novo Caraval na cidade de Valenda.</p>
+                        <a href="noticia9.html" class="btn btn-primary">Ler notícia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/orfeu1.jfif" class="card-img-top" alt="Maçã de Ouro" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sindicato dos Gatos decreta greve e exige libertação imediata de Orfeu</h5>
+                        <p class="card-text">Após a prisão de Orfeu, o Sindicato dos Gatos decreta greve geral e exige sua libertação imediata.</p>
+                        <a href="noticia10.html" class="btn btn-primary">Ler notícia</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+        <footer>
+            TECNOTICIAS — Notícias que você não esperava ler
+        </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
